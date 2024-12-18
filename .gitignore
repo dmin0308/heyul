@@ -11,10 +11,7 @@
 
 # production
 /build
-**/assets/svg
 **/css
-
-**/assets/svg
 
 # misc
 .DS_Store
