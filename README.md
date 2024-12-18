@@ -57,7 +57,9 @@ git clone https://github.com/GITwonwoo/practice.git
 ### 2. 플러그인 목록 설치
 ```bash
 npm install
-``` "dependencies": {
+```
+```
+"dependencies": {
     "@supabase/supabase-js": "^2.46.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
