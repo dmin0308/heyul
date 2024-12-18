@@ -1,0 +1,55 @@
+.quantityButtons{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: var(--color--bg-sub01);
+  border-radius: 4px;
+  width: 96px;
+  height: 36px;
+  padding: 5px 11.34px 5px 11.33px;
+  border-radius: 20px;
+  background-color:#ECEFF3;
+  color: var();
+  .btn{
+    border-width: 0 !important;
+    background: transparent !important;
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: var(---color--stroke);
+    &:active{
+      border: 0 ;
+    }
+    &:last-child{
+      font-weight: normal;
+    }
+  }
+}
+.orgPrice{
+  color: var(--color--stoke, #CCC);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+}
+.description{
+  color: #848F9A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.checkbox{
+  margin-right: 16px;
+  margin-top: 2px;
+}
+
+.productText{
+  line-height: 1.2;
+}

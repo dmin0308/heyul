@@ -1,0 +1,30 @@
+.productThumb {
+  @media (max-width: 990px) and (min-width: 768px) {
+    li:nth-child(4) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    li {
+      flex: 0 0 50%;
+      max-width: 50%; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    li {
+      flex: 0 0 48%; 
+      max-width: 48%;
+      margin: 1%; 
+    }
+  }
+
+  @media (max-width: 360px) {
+    li {
+      flex: 0 0 45%; 
+      max-width: 45%;
+      margin: 2.5%; 
+    }
+  }
+}

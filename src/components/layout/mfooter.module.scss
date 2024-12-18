@@ -1,0 +1,198 @@
+.mf {
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+
+  .search {
+    form {
+      width: 100%;
+    }
+  }
+  .show1{
+    
+    display: none !important; /* 필요 시 완전히 숨김 */
+    }
+  .container {
+    h1 {
+      margin-bottom: 8px;
+      padding-top: 8px;
+    }
+
+    .util {
+      padding-top: 8px;
+    }
+
+    .allmenu {
+      height: 26px;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 16px;
+      }
+
+      svg {
+        margin-right: 8px;
+      }
+
+      &+div {
+        padding-top: 23px;
+        margin-left: -16px;
+      }
+    }
+
+    .gnbwrap {
+      li {
+        &:hover {
+          a {
+            span {
+              color: var(--primary);
+            }
+
+            svg {
+              path {
+                stroke: var(--primary);
+              }
+            }
+          }
+          button {
+            span {
+              color: var(--primary);
+            }
+
+            svg {
+              path {
+                stroke: var(--primary);
+              }
+            }
+          } 
+        }
+      }
+
+      .allNaviul {
+
+        // 전체 카테고리
+        li {
+          letter-spacing: -0.64px;
+          border-bottom: 1px solid #f0f0f0;
+
+          &:hover {
+            >a {
+              //대메뉴
+              background-color: var(--color--bg-sub01, #edf6f6);
+              color: var(--primary);
+              font-weight: 600;
+
+            }
+
+            path {
+              stroke: var(--primary);
+            }
+
+            .submenu {}
+
+          }
+
+          //소메뉴
+          .submenu {
+            line-height: 0.9;
+            background-color: rgba(237, 246, 246, 0.5);
+
+            li {
+              padding: 1rem 2rem;
+
+              &:hover {
+                background-color: rgba(237, 246, 246, 0.5);
+                color: var(--primary);
+                cursor: pointer;
+
+                a {
+                  border-bottom: 1px solid var(--primary)
+                }
+
+
+              }
+            }
+          }
+
+        }
+
+        &:hover {
+          &:after {
+            transition: height 0.5s;
+          }
+
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          background: var(--color--bg-sub01, #EDF6F6);
+        }
+
+
+
+
+      }
+
+
+
+      .gnb {
+        li {
+          flex: 1;
+          span {
+            margin-top: 0.5rem;
+            color: #999;
+            font-size: 12px;
+          }
+
+        }
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .loginbody{
+    border-top:1px solid #ccc;
+    
+  }
+  .catebody{
+    span{
+      margin-top: 4px;
+    }
+    a{
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .utilMenu {
+    form {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  .utilheader {
+    border-bottom: 1px solid #ccc;
+
+    .closeBtn {
+      svg{
+      }
+    }
+  }
+
+  .util {
+    font-size: 14px;
+
+    li {
+      padding: 0 8px;
+
+      a {
+        color: var(--color--sns-active);
+      }
+    }
+  }
+}

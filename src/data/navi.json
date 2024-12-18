@@ -1,0 +1,86 @@
+{
+  "category": [
+    {
+      "categoryId": 1,
+      "name": "간편식·밀키트·샐러드",
+      "subcategory": [
+        { "categoryId": 101, "name": "밀키트", "linkto": "mealkit" },
+        { "categoryId": 102, "name": "샐러드·샌드위치", "linkto": "salad" },
+        { "categoryId": 103, "name": "선식·시리얼", "linkto": "cereal" },
+        { "categoryId": 104, "name": "도시락·밥류", "linkto": "lunchBox" }
+      ],
+      "linkto": "mealSalad"
+    },
+    {
+      "categoryId": 2,
+      "name": "이너뷰티",
+      "subcategory": [
+        { "categoryId": 201, "name": "영양제", "linkto": "supplement" },
+        { "categoryId": 202, "name": "비타민", "linkto": "vitamin" },
+        { "categoryId": 203, "name": "유산균", "linkto": "probiotic" },
+        { "categoryId": 204, "name": "프로틴", "linkto": "protein" },
+        { "categoryId": 205, "name": "체중관리", "linkto": "weightManagement" }
+      ],
+      "linkto": "innerBeauty"
+    },
+    {
+      "categoryId": 3,
+      "name": "음료",
+      "subcategory": [
+        { "categoryId": 301, "name": "과일·야채음료", "linkto": "fruitVegetable" },
+        { "categoryId": 302, "name": "스포츠음료", "linkto": "sport" },
+        { "categoryId": 303, "name": "건강즙·건강음료", "linkto": "healthDrink" },
+        { "categoryId": 304, "name": "미네랄", "linkto": "mineral" },
+        { "categoryId": 305, "name": "차", "linkto": "tea" }
+      ],
+      "linkto": "beverage"
+    },
+    {
+      "categoryId": 4,
+      "name": "수산·해산·건어물",
+      "subcategory": [
+        { "categoryId": 401, "name": "제철수산", "linkto": "seasonal" },
+        { "categoryId": 402, "name": "생선류", "linkto": "fish" },
+        { "categoryId": 405, "name": "오징어·낙지·문어", "linkto": "squidOctopus" },
+        { "categoryId": 406, "name": "해산물·전복·조개류", "linkto": "shellfish" },     
+        { "categoryId": 409, "name": "명란·젓갈·장류", "linkto": "pickled" },   
+        { "categoryId": 411, "name": "김·미역·해조류", "linkto": "seaweed" },
+        { "categoryId": 412, "name": "멸치·황태·다시팩", "linkto": "anchovyPack" }
+      ],
+      "linkto": "seafood"
+    }
+  ]
+,
+  "gnavi" :[
+    {
+      "gnavId": 1,
+      "name": "신상품",
+      "linkto": "product/newArrival"
+    },
+    {
+      "gnavId": 6,
+      "name": "인기상품",
+      "linkto": "product/hot"
+    },
+    {
+      "gnavId": 2,
+      "name": "할인",
+      "linkto": "product/discount"
+    },
+    {
+      "gnavId": 3,
+      "name": "기획전",
+      "linkto": "event"
+    },
+    {
+      "gnavId": 4,
+      "name": "레시피",
+      "linkto": "recipe"
+    },
+    {
+      "gnavId": 5,
+      "name": "정기배송",
+      "linkto": "subscription"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+/* login.module.scss */
+
+/* 전체 Wrapper */
+.loginWrapper {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+/* 내부 컨테이너 */
+.innerContainer {
+  max-width: 450px;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+
+
+/* 로그인 버튼 */
+.lgButton {
+  background-color: #24c57a !important;
+  border: none !important;
+  color: #fff !important;
+  height: 60px;
+  &:hover {
+    background-color: #20b16e !important;
+  }
+}
+
+/* 원형 간편 로그인 버튼 */
+.circleButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.kakao {
+  background-color: #f7e600;
+}
+
+.naver {
+  background-color: #03c75a;
+}
+
+.toss {
+  background-color: #4285f4;
+}
+
+.google {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* 아이디/비밀번호 찾기 및 회원가입 */
+.linkContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ezlogin{
+  border-top: 1px solid #ccc;
+  padding : 1.5rem 0 1rem;
+  margin-top: 1.5rem;
+  
+}
+.logDiv{
+  max-width: 450px !important; 
+
+  .input {
+    height: 60px;
+    &::placeholder {
+      color: var(--color--stoke);
+      font-weight: 200;
+    }
+  }
+}
+
+.sub{
+  font-size: 14px;
+  margin: 1.3125rem 0;
+  a{
+    color: #999;
+  }
+}

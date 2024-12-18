@@ -1,0 +1,60 @@
+.Sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin: 0 50px 0 0;
+  width: 78px;
+  border-radius: var(--radius-l);
+  box-shadow: -2px 4px 4px 0px rgba(119, 119, 119, 0.10);
+ 
+
+
+  .svgbox {
+    border:1px  solid var(--color--stoke);
+    border-radius: 16px 16px 0 0;
+    padding: 16px 0px 0;
+    background: #FFF;
+    width: 100%;
+  }
+
+  .svgs {
+    gap: 10px;
+  }
+
+  span {
+    color: #000;
+    text-align: center;
+    font-family: var(--fontfamily-kr);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 0.8rem;
+  }
+
+  .topbtn {
+    padding: 6px 26px;
+    width: 100%;
+    background: var(--primary);
+
+
+    a{
+      color: #FFF;
+      font-family: var(--fontfamily-kr);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }  
+
+  }
+  
+
+}
+.smtopbtn{
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  z-index: 1040;
+}

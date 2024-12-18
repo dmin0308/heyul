@@ -1,0 +1,20 @@
+.paginationDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc; /* 기본 색상 */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.dotActive {
+  background-color: #34c759; 
+  transform: scale(1.2);
+}

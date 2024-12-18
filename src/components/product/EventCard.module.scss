@@ -1,0 +1,17 @@
+.productGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr); // 데스크톱에서 4개
+
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr); // 태블릿에서 3개
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // 모바일에서 2개
+  }
+}
+
+.product-item {
+  width: 100%; // Grid 안에서 아이템이 레이아웃을 유지하도록 추가
+}

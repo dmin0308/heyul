@@ -1,0 +1,133 @@
+/* 전체 풋터 스타일 */
+.footer {
+  width: 100%;
+  background-image: url('../../../public/img/footer/Frame.png');
+}
+
+/* 이용약관 */
+.footerTerms {
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 10px 0 8px;
+
+  li{
+    margin: 10px 0;
+    color: var(--color--text-primary, #222222);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 0.9;
+    padding: 0 8px;
+    &:first-child{
+      padding: 0 8px 0 0;
+    }
+    &:last-child{
+      padding: 0 0 0 8px;
+    }
+  }
+}
+
+/* 3개의 덩어리 (d-flex 스타일링) */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* 각 덩어리 스타일 */
+.contentBox {
+  h3{
+    padding: 24px 0 20px;
+    color: var(--color--text-primary);
+  }
+  li{
+    color: var(--color--text-primary);
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+    // padding-bottom: 1px;
+  }
+  .Copyright{
+    padding: 32px 0 40px;
+    a{
+      text-decoration: underline;
+    }
+  }
+  //FAX부분 반응형땜에 b태그 넣고 b기본설정 지움 (span이미써서 대타역할)
+  b {
+    font-weight: normal; /* 굵게 설정된 폰트 스타일 제거 */
+    font-style: normal;  /* 기울어진 폰트 스타일 제거 */
+    text-decoration: none; /* 밑줄 또는 다른 텍스트 장식 제거 */
+  }
+
+  ul img{
+    padding: 0 8px;
+  }
+  span{
+    color: var(--color--icon-line);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 8px;
+  }
+  .iconContainer a{
+    padding: 32px 0 0 19px;
+  }
+  .contactSection li:nth-child(1){
+    padding-bottom: 2px;
+  a{
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+  }
+}
+
+  .footerLogo{
+    padding: 62px 0 0 54px;
+
+  }
+  &:nth-child(2) h3{
+    padding: 24px 0 18px 0;
+  }
+}
+
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+
+  .footerWarpper{
+    margin-left: 16px;
+  }
+  .footerContent {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center;
+  }
+  .contentBox {
+    .Copyright{
+      padding: 32px 0 0px;
+    }
+    width: 100%;
+    b{
+      display: block;
+    }
+  }
+  .iconContainer a{
+    padding: 56px 19px 0 0 !important;
+  }
+  .promotionBanner {
+    display: none;
+  }
+  .footerLogo{
+    padding: 62px 0 32px !important;
+  }
+  .mobileFlex {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerTerms li{
+    font-size: 12px;
+  }
+}
+
+

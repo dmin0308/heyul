@@ -1,0 +1,48 @@
+.slide {
+  // width: calc((100% - 10px) / 10) ;
+  width: 100px  !important;
+}
+
+.overflowBOX {
+  // width: 100px;
+  display: flex;
+  align-items: center;
+  // background-size: contain;
+  background-repeat: no-repeat;
+  // background-position: center;
+}
+
+.image {
+  max-width: 100%;
+  object-fit: contain; /* 비율 유지하며 축소 */
+}
+
+/* 반응형 처리 */
+@media (max-width: 1200px) {
+  .slide {
+    width: calc((100% - 10px) / 9); /* 테블릿: 9개 표시 */
+  }
+  .wrapper{
+    margin-left: 16px;
+  }
+  .overflowBOX {
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide {
+    // width: calc((100% - 10px) / 7); /* 모바일: 7개 표시 */
+    width: 60px !important;
+  }
+
+  .image {
+    max-width: 100%;
+    object-fit: contain; /* 비율 유지하며 축소 */
+  }
+
+  .overflowBOX {
+    width: 100%;
+    overflow: hidden;
+  }
+}

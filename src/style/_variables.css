@@ -1,0 +1,36 @@
+:root{  
+  --fontfamily-kr: "Pretendard";
+  --fontfamily-eng: "Inter";
+  --letterspacing: -0.12999999523162842;
+
+
+--color--text-primary: #222222;
+--color--text-secondary: #FFFFFF;
+--color--discount: #F04438;
+--color--stoke: #CCCCCC;
+--color--labeln: #24C57A;
+--color--labeld: #F79009;
+--color--labels: #9E77ED;
+--color--sns-active: #444444;
+--color--sns-default: #44444499;
+--color--bg-white: #FFFFFF;
+--color--bg-sub01: #EDF6F6;
+--color--bg-sub02: #FFF9F2;
+--color--bg-sub03: #F3F9F0;
+--color--default-btn: #BBBBBB;
+--color--pg-default: #22222226;
+--color--pg-active: #2222227F;
+--color--icon-fill-default: #F0F0F0;
+--color--icon-fill-hover: #E4E3E3;
+--color--icon-line: #999999;
+--primary: #24C57A;
+
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --width: 1200px;
+
+
+  
+}

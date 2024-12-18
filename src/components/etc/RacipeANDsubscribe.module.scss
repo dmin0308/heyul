@@ -1,0 +1,87 @@
+// 기존 스타일 유지
+
+// 배너 텍스트 스타일
+.heading {
+  color: var(--color--text-primary);
+  padding: 3.5rem 0 0 2.5rem;
+  line-height: 1.2;
+
+  @media (max-width: 576px) {
+    padding: 2rem 0 0 1.5rem; // sm 이하에서 패딩값 변경
+  }
+}
+
+// 기본 상자 스타일
+.artbox1,
+.artbox2 {
+  height: auto; /* 높이 고정 제거 */
+  max-height: 320px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+// 배경색
+.artbox1 {
+  background: var(--color--bg-sub01, #edf6f6);
+}
+.artbox2 {
+  background: var(--color--bg-sub02, #fff9f2);
+}
+
+// 호버 효과
+.artbox1:hover,
+.artbox2:hover {
+  background: linear-gradient(285deg, #93d2ff 0.9%, #73e3b0 99.1%);
+  .heading {
+    color: var(--color--bg-white);
+  }
+  .arrowbar {
+    path {
+      stroke: white;
+    }
+    transform: scaleX(2); /* 길어짐 */
+    transform-origin: left; /* 좌측에서 확장 */
+    transition: transform 0.3s ease;
+  }
+  .arrowhead {
+    path {
+      stroke: white;
+    }
+    margin-left: 28px; /* 오른쪽 이동 */
+    transition: margin-left 0.3s ease;
+  }
+}
+.artbox2:hover {
+  background: linear-gradient(285deg, #b490df 9.25%, #70c1f6 59.33%);
+}
+
+// 화살표 박스
+.arrowbox {
+  margin-top: auto; /* 하단 정렬 */
+  padding: 3.5rem 0 0 2.5rem;
+  @media (max-width: 576px) {
+    padding: 2rem 0 0 1.5rem; // sm 이하에서 패딩값 변경
+  }
+}
+
+// 화살표 몸통
+.arrowbar {
+  transition: all 0.3s ease;
+  transform-origin: left; /* 애니메이션 기준점 */
+}
+// 화살표 머리
+.arrowhead {
+  margin-left: -16px; /* 기본 위치 */
+  transition: margin-left 0.3s ease;
+}
+
+
+.art1 {
+  max-width: 80%;
+
+}
+
+.art2 {
+  max-width: 80%;
+
+}

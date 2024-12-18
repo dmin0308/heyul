@@ -1,0 +1,82 @@
+.container {
+  padding: 88px 0;
+
+
+  .swiperBanner {
+    position: relative;
+
+    .bt {
+      color: var(--color--pg-default, red);
+      position: relative;
+      top: -124px;
+    }
+
+    &:hover {
+      .bt {
+        color: var(--color--pg-active, blue);
+        transition: 0.3s;
+      }
+    }
+
+    .swiperNavigation {
+      width: 1200px;
+      margin: 0 auto;
+      margin-top: -66px;
+
+      .swiperPrev {
+        left: 0;
+        right: auto;
+      }
+
+      .swiperNext {
+        left: 100%;
+        top: -146px;
+      }
+    }
+  }
+
+  .textGreen {
+    color: var(--color--labeln);
+  }
+
+  .plusBtn {
+    border-radius: 4px;
+  }
+
+  .mplusBtn {
+    border-radius: 99px;
+  }
+}
+
+.swiper-slide {
+  flex: 0 0 auto; // 슬라이드가 고정 너비를 가지도록 설정
+  max-width: 30%;
+  margin-right: 10px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .swiper-slide {
+    max-width: 33.333%;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 830px) and (min-width: 768px) {
+  h2 > span {
+    font-size: 28px !important ;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .swiper-slide {
+    max-width: 50%;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+    .swiper-slide {
+    max-width: 100%;
+    margin-right: 10px;
+  }
+}

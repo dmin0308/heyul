@@ -1,0 +1,31 @@
+.swiperBanner{
+  position: relative;
+  .bt{
+    color: var(--color--pg-default,red);
+    position: relative;
+    top: -124px;
+  }
+&:hover {
+  .bt{
+    color: var(--color--pg-active,blue);
+    transition:0.3s;
+  }
+}
+.swiperNavigation{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -66px;
+  .swiperPrev{
+    left: 0;
+    right: auto;
+  }
+  .swiperNext{
+    left: 100%;
+    top: -146px;
+  }
+}
+
+}
+
+
+

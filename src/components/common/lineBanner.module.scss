@@ -1,0 +1,129 @@
+// 초록 긴 띠배너
+.greenBanner {
+  width: 100%;
+  height: 60px;
+  background-color: var(--primary);
+  position: relative;
+  overflow: hidden;
+}
+
+// 알파벳 공통 적용
+.h, .e, .y, .u, .l {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+
+// 각 알파벳 기본위치
+.h {
+  margin: 16px 1151px 23px 2px;
+  animation: h 3s ease-in-out infinite;
+}
+
+.e {
+  margin: 17px 1023px 12px 138px;
+  animation: e 3s ease-in-out infinite;
+}
+
+.y {
+  margin: 18px 162px 12px 993px;
+  animation: y 3s ease-in-out infinite;
+}
+
+.u {
+  margin: 16px 86px 21px 1083px;
+  animation: u 3s ease-in-out infinite;
+}
+
+.l {
+  margin: 15px 3px 15px 1175px;
+  animation: l 3s ease-in-out infinite;
+}
+
+// 각 알파벳 애니메이션 키프레임
+@keyframes h {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes e {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes y {
+  0% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes u {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes l {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+//해율 서비스~모바일text + download 묶은 박스 
+.TextBox{
+  margin-top: 15px;
+  width: 538px;
+  margin: 15px auto;
+}
+//해율 서비스~모바일text
+.text {
+  color: var(--color--text-secondary);
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 400;
+}
+//download
+.downbtn {
+  width: 100%; /* 원하는 크기 설정 */
+  height: 100%; /* 원하는 크기 설정 */
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .h, .e, .y, .u, .l{
+    display: none;
+  }
+}

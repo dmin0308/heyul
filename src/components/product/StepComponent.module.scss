@@ -1,0 +1,14 @@
+.numbertext {
+  font-size: 80px;
+  font-family: "Pretendard-SemiBold, sans-serif";
+  height: 95px;
+  line-height: 1;
+
+  @media (max-width: 992px) and (min-width: 576px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 30px;
+  }
+}

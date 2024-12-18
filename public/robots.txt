@@ -1,0 +1,19 @@
+# 모든 검색 엔진 크롤러 허용
+User-agent: *
+Allow: /
+
+# 특정 디렉토리 크롤링 허용
+Allow: /products/
+Allow: /about/
+Allow: /blog/
+
+# 민감한 경로 크롤링 금지
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /login/
+Disallow: /signup/
+Disallow: /Error/
+Disallow: /mypage/
+
+# Sitemap URL 지정
+Sitemap: https://woo-sigma.vercel.xml

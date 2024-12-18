@@ -1,0 +1,183 @@
+/* 전체 container 설정 */
+.page {
+  white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+  overflow: hidden;    /* 넘친 텍스트 숨기기 */
+  text-overflow: ellipsis; /* 말줄임표(...) 적용 */
+
+}
+
+.containerFluid {
+  padding: 0;
+  /* 상위 패딩 제거 */
+  max-width: 1200px;
+  margin: 0 auto;
+
+  strong {
+    color: #24C57A;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.container {
+  padding: 0;
+  /* 추가적인 여백 제거 */
+  box-sizing: border-box;
+
+}
+
+.bd {
+  border-right: 1px solid #ccc;
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+/* Sidebar 스타일 */
+.sidebar {
+  border-radius: 16px;
+  padding: 1.5rem;
+  background-color: #fff;
+
+  h4,
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #bbb;
+  }
+}
+
+.listContainer {
+  border-top: 1px solid #ccc;
+  transition: 0.5s;
+
+  li {
+    &:hover {
+      color: #24C57A;
+      stroke: #24C57A;
+
+      svg {
+        path {
+          stroke: #24C57A;
+        }
+
+        ellipse {
+          fill: #24C57A;
+        }
+      }
+    }
+  }
+}
+
+.fs18{
+  font-weight: 500;
+}
+.ldiv {
+  font-size: 14px;
+
+  p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.mdiv {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden
+}
+
+.smdiv {
+  font-size: 13px;
+  font-weight: 500;
+
+  span {
+    color: #24C57A;
+  }
+}
+
+.listGroupItem {
+  color: var(--color--text-primary);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .badge {
+    font-size: 12px;
+  }
+}
+
+/* Content 스타일 */
+.content {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+
+  h4 {
+    border-bottom: 1.5px solid #222;
+    padding-bottom: 1.5rem;
+  }
+
+  .tabs {
+    border-bottom: 1px solid #ccc;
+    button {
+      flex: 1;
+      /* 버튼의 너비를 균등하게 설정 */
+      text-align: center;
+      /* 텍스트 중앙 정렬 */
+      padding: 0.7rem 1rem;
+      /* 적당한 패딩 추가 */
+      border-radius: 999px;
+      /* 둥근 모서리 */
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+      color: #aaa;
+      background-color: #f5f5f5;
+
+      &:hover {
+        background-color: #ddd;
+        /* 호버 효과 */
+      }
+
+      &.active {
+        background-color: var(--primary);
+        /* 활성화된 버튼 배경색 */
+        color: #fff;
+        /* 활성화된 버튼 텍스트 색상 */
+      }
+    }
+  }
+
+  
+  .btnPlsit {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    color: #666;
+    transition: 0.3s;
+    &:hover {
+      border: 1px solid #24C57A;
+      color: #24C57A;
+      /* 호버 효과 */
+    }
+
+    &.active {
+      background-color: var(--primary);
+      /* 활성화된 버튼 배경색 */
+      color: #fff;
+      /* 활성화된 버튼 텍스트 색상 */
+    }
+  }
+}

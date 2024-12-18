@@ -1,0 +1,13 @@
+.rating {
+  display: inline-flex;
+  gap: 4px;
+
+
+.ratingActive svg {
+  fill: #24c57a; /* 칠해진 별 색상 */
+}
+
+.ratingInactive svg {
+  fill: #cccccc; /* 비칠해진 별 색상 */
+}
+}
