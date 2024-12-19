@@ -16,4 +16,4 @@ Disallow: /Error/
 Disallow: /mypage/
 
 # Sitemap URL 지정
-Sitemap: https://woo-sigma.vercel.xml
+Sitemap: https://heyul.vercel.xml
