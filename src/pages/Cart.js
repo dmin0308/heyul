@@ -54,6 +54,18 @@ export default function Cart({ cartItems, cartToCart, isLoggedIn }) {
     setTotalPrice(total); // 총 금액 설정
   }, [cartItems]);
 
+  //데이터 수집
+  useEffect(() => {
+    if (window?.wcs && typeof window.wcs.trans === "function") {
+      var _conv = {};
+      _conv.type = "lead"; // 전환 유형 설정
+      window.wcs.trans(_conv); // 전환 데이터 서버 전송
+    } else {
+      console.warn("wcs is not defined or wcs.trans is not a function");
+    }
+  }, []);
+
+
   return (
     <div className="bg-sub01">
       <div className="mw pb-5 px-3 px-xxl-0">

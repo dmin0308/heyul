@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef} from "react";
 import sd from "./sidebar.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Sidebar({ isLoggedIn, handleLogout }) {
   const [localIsLoggedIn, setLocalIsLoggedIn] = useState(isLoggedIn); // 추가: 로그인 상태 관리
   const navigate = useNavigate(); // 페이지 이동
+  const qnaButtonRef = useRef(null); // DOM 요소에 접근하기 위한 ref
 
   // 부모 컴포넌트의 로그인 상태 변경 시 동기화
   useEffect(() => {
@@ -22,6 +23,30 @@ export default function Sidebar({ isLoggedIn, handleLogout }) {
       navigate("/mypage"); // 로그인 상태면 마이페이지로 이동
     }
   };
+
+  useEffect(() => {
+    const trackNaverReservation = (event) => {
+      event.preventDefault();
+      if (window?.wcs?.trans) {
+        window.wcs.trans({ type: "custom001" });
+      } else {
+        console.warn("wcs is not defined or wcs.trans is not a function");
+      }
+    };
+
+    const button = qnaButtonRef.current;
+    if (button) {
+      button.addEventListener("click", trackNaverReservation);
+    }
+
+    // 컴포넌트 언마운트 시 이벤트 리스너 제거
+    return () => {
+      if (button) {
+        button.removeEventListener("click", trackNaverReservation);
+      }
+    };
+  }, []);
+
 
   return (
     <>
@@ -68,6 +93,7 @@ export default function Sidebar({ isLoggedIn, handleLogout }) {
               <Link
                 to={"/login"}
                 className="d-flex flex-column align-items-center"
+                ref={qnaButtonRef} // ref 연결
               >
                 <svg
                   width="26"
